@@ -1,0 +1,140 @@
+body {
+    background-color: blueviolet;
+}
+
+.gallery {
+    display: flex;
+    left: calc(50% - 330px);
+}
+
+.card {
+    position: relative;
+    left: 0px;
+    width: 500px;
+    height: 400px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+}
+
+.card:nth-child(1) {
+    background-color: #bb81ff;
+}
+
+.card:nth-child(2) {
+    background-color: #FF9950;
+}
+
+.card:nth-child(3) {
+    background-color: #AAECBA;
+    
+}
+
+.card:nth-child(4) {
+    background-color: #ED6A5E;
+}
+
+.card:nth-child(5) {
+    background-color: #4AE7C8;
+}
+
+.card:not(:first-child) {
+    margin-left: -55px;
+}
+
+.card:hover {
+    transform: translateY(-16px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card:hover ~ .card {
+    left: 55px;
+}
+
+.gallery2 {
+    display: flex;
+    left: calc(50% - 330px);
+}
+
+.card1 {
+    position: relative;
+    left: 0px;
+    width: 405px;
+    height: 400px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+}
+
+.card1:nth-child(1) {
+    background-color: #2E86C1;
+}
+
+.card1:nth-child(2) {
+    background-color: #F1C40F;
+}
+
+.card1:nth-child(3) {
+    background-color: #CD6155;
+    
+}
+
+.card1:nth-child(4) {
+    background-color: #616A6B;
+}
+
+.card1:nth-child(5) {
+    background-color: #979A9A;
+}
+
+.card1:not(:first-child) {
+    margin-left: -55px;
+}
+
+.card1:hover {
+    transform: translateY(-16px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card1:hover ~ .card {
+    left: 55px;
+}
+
+input {
+    width: 150px;
+    height: 20px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+.animate1 {
+    width: 800px;
+    height: 20px;
+    background-color: black;
+    animation-name: animate1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.container {
+    background-color: blueviolet;
+}
+
+.container > .gallery2 {
+    margin-top: 20px;
+}
+
+header > h1 {
+    text-align: center;
+}

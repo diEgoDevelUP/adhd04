@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoluciones TS</title>
+    <script src="./ts/index.js"></script>
+    <link rel="stylesheet" href="./css/indexstyle.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <header>
+        <h1 class="animate_animated animate__pulse">Proyecto usando TypeScript</h1>
+    </header>
+    <div class="animate1 animate__bounceOutRight"></div>
+    <div class="container">
+        <div class="gallery">
+            <div class="card">
+                <section id="sec1">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#1</strong>
+                        <h3>Calcular promedio de 3 numeros ingresados</h3>
+                    </h1>
+                    <div class="dentro">
+                        <label for="num1">Primer número:</label>
+                        <input type="number" id="num1" required>
+                        <br>
+                        <br>
+                        <label for="num2">Segundo número:</label>
+                        <input type="number" id="num2" required>
+                        <br>
+                        <br>
+                        <label for="num3">Tercer número:</label>
+                        <input type="number" id="num3" required>
+
+                        <p id="operacion"></p>
+
+                        <button onclick="calcularPromedio()">Calcular</button>
+
+                        <p id="resultado"></p>
+
+                    </div>
+                </section>
+            </div>
+            <div class="card">
+                <section id="sec2">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#2</strong></h1>
+                    <h3>Calcular el area de un triangulo</h3>
+                    <label for="bas">Base:</label>
+                    <input type="number" id="bas" required>
+                    <br>
+                    <br>
+                    <label for="alt">Altura:</label>
+                    <input type="number" id="alt" required>
+
+                    <h3 id="areaDeTriangulo"></h3>
+
+                    <button onclick="calcularArea()">Calcular</button>
+
+                    <p id="resultadosol2"></p>
+                </section>
+            </div>
+            <div class="card">
+                <section id="sec3">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#3</strong></h1>
+                    <h3>Determinar si el numero es par o impar</h3>
+                    <label for="numPaoImp">Numero:</label>
+                    <input type="number" id="numPaoImp" required>
+
+                    <h3 id="paroimpar"></h3>
+
+                    <button onclick="calcularParOImpar()">Calcular</button>
+
+                    <p id="resultadosol3"></p>
+                </section>
+            </div>
+            <div class="card">
+                <section id="sec4">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#4</strong></h1>
+                    <h3>Encontrar el numero mayor y menor</h3>
+                    <label for="numeroUno">Numero1:</label>
+                    <input type="number" id="numeroUno" required>
+                    <br>
+                    <br>
+                    <label for="numeroDos">Numero2:</label>
+                    <input type="number" id="numeroDos" required>
+                    <br>
+                    <br>
+                    <label for="numeroTres">Numero3:</label>
+                    <input type="number" id="numeroTres" required>
+                    <br>
+                    <br>
+
+                    <button onclick="calcularMayorMenor()">Calcular</button>
+
+                    <p id="resultadosol4"></p>
+                    <p id="resultadosol4y1"></p>
+                </section>
+            </div>
+            <div class="card">
+                <section id="sec1">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#5</strong>
+                        <h3>Elevar un numero a una potencia</h3>
+                    </h1>
+                    <div class="dentro">
+                        <label for="numeropot">Numero que quiere elevar:</label>
+                        <input type="number" id="numeropot" required>
+                        <br>
+                        <br>
+                        <label for="numeroPotencia">Potencia</label>
+                        <input type="number" id="numeroPotencia" required>
+                        <br>
+                        <br>
+                        <button onclick="calcularPotencia()">Calcular</button>
+
+                        <p id="resultadopot"></p>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="gallery2">
+            <div class="card1">
+                <section id="sec1">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#6</strong>
+                        <h3>Texto ingresado mostrado a la inversa</h3>
+                    </h1>
+                        <label for="textrev">Ingrese el texto:</label>
+                        <input type="text" id="textrev" required>
+                        <br>
+                        <br>
+                        <button onclick="invertirTexto()">Mostrar</button>
+
+                        <p id="resultadotextinv"></p>
+                </section>
+            </div>
+            <div class="card1">
+                <section id="sec1">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#7</strong>
+                        <h3>Calcular factorial de un numero ingresado</h3>
+                    </h1>
+                        <label for="numfact">Ingrese un numero:</label>
+                        <input type="number" id="numfact" required>
+                        <br>
+                        <br>
+                        <button onclick="calcularfactorial()">Calcular</button>
+
+                        <p id="resultadofact"></p>
+                </section>
+            </div>
+            <div class="card1">
+                <section id="sec1">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#8</strong>
+                        <h3>Calcular si el numero es un numero perfecto</h3>
+                    </h1>
+                        <label for="num1per">Ingrese el numero:</label>
+                        <input type="number" id="num1per" required>
+                        <br>
+                        <br>
+                        <button onclick="checkNumeroPerfecto()">Calcular</button>
+
+                        <p id="resultadoper"></p>
+                </section>
+            </div>
+            <div class="card1">
+                <section id="sec1">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#9</strong>
+                        <h3>Verificar si el numero es un numero primo</h3>
+                    </h1>
+                        <label for="num1primo">Ingrese el numero:</label>
+                        <input type="number" id="num1primo" required>
+                        <br>
+                        <br>
+                        <button onclick="comprobarPrimo()">Calcular</button>
+
+                        <p id="resultadoPrimo"></p>
+                </section>
+            </div>
+            <div class="card1">
+                <section id="sec1">
+                    <h1 class="animate_animated animate__bounceIn">Solucion <strong class="secondcolor">#10</strong>
+                        <h3>Contar las vocales exitentes en el texto ingresado</h3>
+                    </h1>
+                        <label for="var1">Ingrese el texto:</label>
+                        <input type="text" id="var1" required>
+                        <br>
+                        <br>
+                        <button onclick="countVocales()">Mostrar</button>
+
+                        <p id="resultadoVocales"></p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
